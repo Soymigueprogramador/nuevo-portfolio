@@ -23,7 +23,7 @@ body {
     background-attachment: fixed;
 }
 
-.header__container-nav {
+.navbar {
     width: 100%;
     top: 0;
     left: 0;
