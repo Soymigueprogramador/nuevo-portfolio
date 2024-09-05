@@ -1,6 +1,6 @@
 :root {
     --color-text-grey-light: #ffffff;
-    --color-text-grey-dark: #666;
+    --color-text-grey-dark: #000;
 }
 
 body {
@@ -42,12 +42,12 @@ body {
 }
 
 .header__container-title a {
-    color: white;
+    color: #000;
     text-decoration: none;
 }
 
 .header__container-title a:hover {
-    color: rgb(180, 180, 180);
+    color: #000; 
 }
 
 .header__container-title a h1 {
@@ -58,7 +58,7 @@ body {
 }
 
 .header_tabnav a {
-    color: white;
+    color: #000;
     padding: 15px;
     margin: 0;
     text-decoration: none;
@@ -66,7 +66,7 @@ body {
 }
 
 .header_tabnav a:hover {
-    color: rgb(180, 180, 180);
+    color: #000;
 }
 
 /* titulo */
