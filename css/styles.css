@@ -32,6 +32,11 @@ body {
     z-index: 3;
 }
 
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
 .header__container-nav--margin {
     display: flex;
     align-items: center;
@@ -94,9 +99,11 @@ body {
 }
 
 .cv {
-    background-color: #74ACDF;
-    color: #FFFFFF;
+    background-color: #04AA6D;
+    color: white;
     border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 /* About me */
@@ -139,7 +146,7 @@ body {
 
 .about__description-container p {
     color: var(--color-text-grey-dark);
-    text-align: center;
+    text-align: left;
 }
 
 /* about abilitys */
@@ -338,7 +345,6 @@ body {
     display: flex;
 }
 
-/*  */
 .contacts__img-container {
     flex: 0 0 60%;
     display: flex;
@@ -350,7 +356,6 @@ body {
     width: 70%;
 }
 
-/*  */
 .contacts__form-container {
     flex: 0 0 40%;
 }
@@ -366,7 +371,6 @@ body {
 
 input[type=text],
 input[type=email],
-input[type=tel],
 textarea {
     width: 100%;
     padding: 12px 20px;

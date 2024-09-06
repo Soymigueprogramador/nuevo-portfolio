@@ -15,49 +15,48 @@
         rel="stylesheet">
     <title>Portfolio Miguel Salazar</title>
 </head>
+
 <body>
 
     <header>
         <div class="img-container">
-            <!--<div class="header__container-nav">
-                <div class="header__container-nav--margin">
-                    <div class="header__container-title">
-                        <a href="">
-                            <h1>Miguel Salazar</h1> 
-                        </a>
-                    </div>
-                    <nav class="header_tabnav">
-                        <a href="#conoceme">conoceme</a>
-                        <a href="#skill">Habilidades</a>
-                        <a href="#project">Projectos</a>
-                        <a href="#contact">Contacto</a>
-                    </nav>
-                </div>
-            </div>-->
+
 
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Miguel Salazar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="header_tabnav">
-                            <a href="#conoceme">conoceme</a>
-                            <a href="#skill">Habilidades</a>
-                            <a href="#project">Projectos</a>
-                            <a href="#contact">Contacto</a>
-                        </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a class="nav-link" href="#inicio">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#conoceme">Conoceme</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#habilidades">Habilidad</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#proyectos">Proyectos</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
 
-            <div class="title-container">
+            <div class="title-container" id="inicio">
                 <h1>Soy Miguel</h1>
                 <p>Front-end developer</p>
-                <button id="descarga-mi-cv" class="cv"> Descarga mi cv </button>
             </div>
         </div>
     </header>
@@ -69,31 +68,32 @@
             </div>
 
             <div class="about__img-container">
-                <img src="./img/yo-2.jpg" alt="yo">
+                <img src="./img/yo.png" alt="yo">
             </div>
 
             <div class="about__description-container">
                 <p>
-                    ¡Hola! 😊 
+                    ¡Hola! 😊
                     Soy un desarrollador front-end con conocimientos en HTML5, CSS3, Bootstrap, Sass, JavaScript,
-                    React.js, Git y GitHub. 
+                    React.js, Git y GitHub.
                     En mi trayectoria, he adquirido experiencia en el desarrollo de sitios web y aplicaciones web
                     interactivas, así como en la colaboración efectiva en equipos multidisciplinarios. Mi objetivo a
                     corto plazo es continuar fortaleciendo mis habilidades técnicas y ampliando mi experiencia en
                     proyectos desafiantes. A mediano plazo, aspiro a consolidarme como un profesional versátil y
                     altamente competente en el ámbito del desarrollo web. A largo plazo, me veo liderando equipos de
-                    desarrollo y contribuyendo al avance y la innovación en la industria tecnológica. 
+                    desarrollo y contribuyendo al avance y la innovación en la industria tecnológica.
                     Estoy entusiasmado/a por explorar nuevas oportunidades que me permitan seguir creciendo
                     profesionalmente y aportando valor con mis habilidades y conocimientos.
                     ¡Gracias por tu tiempo y consideración!
                     Saludos, <br>
                 </p>
+                <button id="descarga-mi-cv" class="cv"> Descarga mi cv </button>
             </div>
 
-            <div class="about__abilitys-container">
+            <div class="about__abilitys-container" id="habilidades">
                 <div class="about__abilitys-container--center">
                     <div class="about__ability-title-container">
-                        <h3>Habilidades blandas</h3>
+                        <h3>Habilidades</h3>
                     </div>
 
                     <div class="about__abilitys">
@@ -114,11 +114,11 @@
             </div>
         </div>
 
-        <div class="skills" id="skill">
+        <div class="skills" id="tecnologias">
             <div class="skill--center">
 
                 <div class="skills__title-container">
-                    <h2>Habilidades duras</h2>
+                    <h2>Tecnologias</h2>
                 </div>
 
                 <div class="skills__skill-container">
@@ -155,15 +155,11 @@
                         <img src="./img/tecnologias/react.png" alt="React.js">
                     </div>
 
-
-
-
-
                 </div>
             </div>
         </div>
 
-        <div class="projects" id="project">
+        <div class="projects" id="proyectos">
             <h3>Proyectos</h3>
             <div class="projects__card-containers">
 
@@ -272,11 +268,11 @@
                     <div class="card__views">
                         <div>
                             <i class="fa fa-link"></i>
-                            <a href="https://mi-porfolio.netlify.app/">Ver proyecto</a>
+                            <a href="https://mi-porfolio.netlify.app/" target="_blank">Ver proyecto</a>
                         </div>
                         <div>
                             <i class="fa fa-github"></i>
-                            <a href="https://github.com/Soymigueprogramador/mi-portafolio">Ver el codigo</a>
+                            <a href="https://github.com/Soymigueprogramador/mi-portafolio" target="_blank">Ver el codigo</a>
                         </div>
                     </div>
                 </article>
@@ -342,29 +338,30 @@
             </div>
         </div>
 
-        <div class="contacts" id="contact">
+        <div class="contacts" id="contacto">
             <h3>Contact me</h3>
 
             <div class="contacts__container">
                 <div class="contacts__img-container">
-                    <img src="./img/contact.png" alt="imagen contacto">
+                    <img src="./img/contacto.png" alt="imagen contacto">
                 </div>
 
                 <div class="contacts__form-container">
-                    <form>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Your name..">
+                    <form action="https://formsubmit.co/soymigueprogramador@gmail.com" method="POST">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Ingresa tu nombre" name="nombre" required>
 
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Your email..">
+                        <input type="email" id="email" placeholder="Ingresa tu email" name="email" required>
 
-                        <label for="tel">Tel</label>
-                        <input type="tel" id="tel" placeholder="Your number tel..">
-
-                        <label for="message">Message</label>
-                        <textarea id="message" placeholder="Your message"></textarea>
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" placeholder="Dejame tu mensaje" name="mensaje" required></textarea>
                         <input type="submit" value="Submit">
                     </form>
+
+                    
+
+
                 </div>
             </div>
 
@@ -387,6 +384,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
