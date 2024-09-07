@@ -523,7 +523,7 @@ footer {
     }
 }
 
-
+/* Texto del inicio en vista mobile */
 @media (max-width: 768px) {
     .title-container {
       display: flex;
