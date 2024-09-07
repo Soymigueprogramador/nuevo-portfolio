@@ -488,16 +488,37 @@ footer {
 /* El formulario en mobile */
 @media (max-width: 768px) {
     .contacts__img-container {
-        display: none; /* Oculta la imagen en pantallas pequeñas */
+        display: none; 
     }
 
     .contacts__form-container {
-        flex: 0 0 100%; /* El formulario ocupará todo el ancho */
+        flex: 0 0 100%; 
         display: flex;
-        justify-content: center; /* Centra el formulario horizontalmente */
+        justify-content: center; 
     }
 
     .contacts__form-container form {
-        width: 90%; /* Ajusta el ancho del formulario para que se vea mejor en mobile */
+        width: 90%; 
+    }
+}
+
+/* Mis habilidades en mobile */
+@media (max-width: 768px) {
+    .about__abilitys-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__abilitys {
+        flex-direction: column;
+    }
+
+    .about__abilitys article {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .about__abilitys img {
+        width: 50%;
     }
 }
