@@ -522,3 +522,10 @@ footer {
         width: 50%;
     }
 }
+
+
+@media (max-width: 768px) {
+    title-container {
+        text-align: center;
+    }
+}
