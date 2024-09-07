@@ -26,7 +26,7 @@ function descargarCv() {
 
 // Aca esta la logica para el alert que de dispara despues de mandar el formulario 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+    event.preventDefault(); 
     
     const form = event.target;
     const formData = new FormData(form);
@@ -37,29 +37,24 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     })
     .then(response => {
         if (response.ok) {
-            // Mostrar la alerta de éxito
             Swal.fire({
-                title: "¡Buen trabajo!",
-                text: "Tu mensaje ha sido enviado con éxito.",
+                title: "¡Mensaje enviado!",
+                text: "Gracias por comunicarte conmigo, Tratare de contestarte lo antes posible",
                 icon: "success"
             });
-
-            // Limpiar el formulario después del envío
             form.reset();
         } else {
-            // Mostrar una alerta de error si falla
             Swal.fire({
-                title: "Error",
-                text: "Hubo un problema al enviar tu mensaje. Inténtalo de nuevo.",
+                title: "Mensaje no enviado",
+                text: "UPS algo salio mal, asun asi te podes comunicar conmigo por linkedin",
                 icon: "error"
             });
         }
     })
     .catch(error => {
-        // Mostrar alerta de error si hay algún problema con la solicitud
         Swal.fire({
-            title: "Error",
-            text: "Hubo un problema al enviar tu mensaje. Inténtalo de nuevo.",
+            title: "Mensaje no enviado",
+            text: "UPS algo salio mal, asun asi te podes comunicar conmigo por linkedin",
             icon: "error"
         });
     });

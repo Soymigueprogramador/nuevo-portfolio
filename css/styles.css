@@ -484,3 +484,20 @@ footer {
 .footer__button-up:hover span {
     opacity: 1;
 }
+
+/* El formulario en mobile */
+@media (max-width: 768px) {
+    .contacts__img-container {
+        display: none; /* Oculta la imagen en pantallas pequeñas */
+    }
+
+    .contacts__form-container {
+        flex: 0 0 100%; /* El formulario ocupará todo el ancho */
+        display: flex;
+        justify-content: center; /* Centra el formulario horizontalmente */
+    }
+
+    .contacts__form-container form {
+        width: 90%; /* Ajusta el ancho del formulario para que se vea mejor en mobile */
+    }
+}
