@@ -1,3 +1,4 @@
+// Logica para la descarga del cv.
 // Guardo el "ID" del botón
 const DescargaMiCv = document.getElementById("descarga-mi-cv");
 
@@ -24,7 +25,7 @@ function descargarCv() {
     document.body.removeChild(enlaceDescarga);
 }
 
-// Aca esta la logica para el alert que de dispara despues de mandar el formulario 
+// Logica para el alert que de dispara despues de mandar el formulario 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); 
     
