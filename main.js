@@ -25,7 +25,7 @@ function descargarCv() {
     document.body.removeChild(enlaceDescarga);
 }
 
-// Logica para el alert que de dispara despues de mandar el formulario 
+/* Logica para el alert que de dispara despues de mandar el formulario 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault(); 
     
@@ -59,4 +59,29 @@ document.getElementById("contactForm").addEventListener("submit", function(event
             icon: "error"
         });
     });
+});*/
+
+
+
+const contactForm = document.getElementById('contactForm'); 
+
+addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = {
+        name: e.target.name.value,
+        name: e.target.name.value,
+        mensaje: e.target.mensaje.value,
+    };
+
+    try {
+        const response = await fetch('http://127.0.0.1:5500/index.html#contacto', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+        });
+    } catch (error) {
+        console.log('Mensaje no enviado', error);
+        alert('Mensaje no enviado');
+    }
 });
