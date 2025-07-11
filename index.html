@@ -634,7 +634,7 @@ B
                     <div class="contacts__form-container">
                         <!--<form id="contactForm" action="https://formsubmit.co/soymigueprogramador@gmail.com" method="POST">-->
 
-                        <form id="contactForm" action="https://formsubmit.co/soymigueprogramador@gmail.com"
+                    <!--    <form id="contactForm" action="https://formsubmit.co/soymigueprogramador@gmail.com"
                             method="POST">
 
                             <label for="name">Nombre</label>
@@ -646,13 +646,36 @@ B
                             <label for="message">Mensaje</label>
                             <textarea name="mensaje" required placeholder="Tu mensaje"></textarea>
 
-                            <!-- Este input evita el redireccionamiento por defecto de FormSubmit -->
+                            
                             <input type="submit" value="Enviar">
 
                             <input type="hidden" name="_next"
                                 value="https://portfolio-miguel-salazar.netlify.app/#contacto">
                             <input type="hidden" name="_captcha" value="false">
+                        </form>-->
+
+                        <form id="form-contacto">
+                            <label for="message">Nombre</label>
+                            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required />
+
+                            <label for="message">Email</label>
+                            <input type="email" id="email" placeholder="Ingresa tu email" required />
+                            
+                            <label for="message">Asunto</label>
+                            <input type="text" id="asunto" placeholder="Ingresa el asunto" required />
+
+                            <label for="message">Mensaje</label>
+                            <textarea id="mensaje" placeholder="Ingresa el mensaje" required></textarea>
+                            
+                            <input type="submit" value="Enviar">
+
+                            <input type="hidden" name="_next"
+                                value="https://portfolio-miguel-salazar.netlify.app/#contacto">
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <p id="respuesta"></p>
                         </form>
+
 
                     </div>
                 </div>

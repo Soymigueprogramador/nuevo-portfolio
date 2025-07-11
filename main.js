@@ -36,7 +36,7 @@ function descargarCv() {
 
 // ==================== ENVÍO DEL FORMULARIO DE CONTACTO ====================
 
-// Agrega un evento "submit" al formulario con ID "contactForm"
+/* Agrega un evento "submit" al formulario con ID "contactForm"
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     // Previene el comportamiento por defecto del formulario (que recargue la página)
     event.preventDefault();
@@ -81,4 +81,47 @@ document.getElementById("contactForm").addEventListener("submit", function (even
                 text: "No se pudo enviar el mensaje. Intentá nuevamente más tarde.",
             });
         });
-});
+}); */
+
+const form = document.getElementById("form-contacto");
+const respuesta = document.getElementById("respuesta");
+
+// Constante para guardar la api que comunica al front-end y al back-end
+const apiContacto = "http://localhost:8080/api/contacto";
+
+// Evento del formulario.
+form.addEventListener('submit', async (e) => {
+    e.preventDefault(); 
+
+    // Levantamos informacion de los campos.
+    const nombre = document.getElementById('nombre').value;
+    const email = document.getElementById('email').value;
+    const asunto = document.getElementById('asunto').value;
+    const mensaje = document.getElementById('mensaje').value;
+
+    try {
+        const respuesta = await fetch(apiContacto, {
+            method: 'POST',
+            headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            nombre,
+            email,
+            asunto,
+            mensaje
+        }),
+        });
+        const data = await resizeBy.JSON();
+
+        if(respuesta.ok) {
+            respuesta.textContent = "✅ Mensaje enviado con éxito";
+            form.reset();
+        } else {
+            respuesta.textContent = "❌ Error: " + data.message;
+        }
+    } catch(error) {
+        console.error('Tu mensaje no fue enviado', error); 
+        respuesta.textContent = "❌ Error al enviar el mensaje.";
+    };
+})
