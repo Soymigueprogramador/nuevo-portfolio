@@ -9,7 +9,7 @@ DescargaMiCv.addEventListener("click", descargarCv);
 // Define la función que se ejecutará al hacer clic en el botón
 function descargarCv() {
     // Ruta relativa del archivo PDF del CV dentro del proyecto
-    const urlCv = "./Mi cv/MIGUEL SALAZAR CV.pdf";
+    const urlCv = "./Mi cv/CV - Miguel Guimar Salazar.pdf";
 
     // Crea un elemento HTML <a> dinámicamente (etiqueta de enlace)
     const enlaceDescarga = document.createElement("a");
@@ -18,7 +18,7 @@ function descargarCv() {
     enlaceDescarga.href = urlCv;
 
     // Especifica el nombre con el que se descargará el archivo
-    enlaceDescarga.download = "MIGUEL SALAZAR CV.pdf";
+    enlaceDescarga.download = "CV - Miguel Guimar Salazar.pdf";
 
     // Oculta el enlace del DOM (no será visible para el usuario)
     enlaceDescarga.style.display = "none";
@@ -91,7 +91,7 @@ const apiContacto = "http://localhost:8080/api/contacto";
 
 // Evento del formulario.
 form.addEventListener('submit', async (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     // Levantamos informacion de los campos.
     const nombre = document.getElementById('nombre').value;
@@ -121,7 +121,7 @@ form.addEventListener('submit', async (e) => {
             respuesta.textContent = "❌ Error: " + data.message;
         }
     } catch(error) {
-        console.error('Tu mensaje no fue enviado', error); 
+        console.error('Tu mensaje no fue enviado', error);
         respuesta.textContent = "❌ Error al enviar el mensaje.";
     };
 })
