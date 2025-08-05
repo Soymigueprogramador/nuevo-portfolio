@@ -9,7 +9,7 @@ DescargaMiCv.addEventListener("click", descargarCv);
 // Define la función que se ejecutará al hacer clic en el botón
 function descargarCv() {
     // Ruta relativa del archivo PDF del CV dentro del proyecto
-    const urlCv = "./Mi cv/CV - Miguel Guimar Salazar.pdf";
+    const urlCv = "./Mi cv/CV - Miguel Salazar.pdf";
 
     // Crea un elemento HTML <a> dinámicamente (etiqueta de enlace)
     const enlaceDescarga = document.createElement("a");
@@ -18,7 +18,7 @@ function descargarCv() {
     enlaceDescarga.href = urlCv;
 
     // Especifica el nombre con el que se descargará el archivo
-    enlaceDescarga.download = "CV - Miguel Guimar Salazar.pdf";
+    enlaceDescarga.download = "CV - Miguel Salazar.pdf";
 
     // Oculta el enlace del DOM (no será visible para el usuario)
     enlaceDescarga.style.display = "none";
