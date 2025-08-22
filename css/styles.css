@@ -17,7 +17,7 @@ body {
 /* Imagen fondo */
 
 .img-container {
-    background: url("../img/fondo-2.png");
+    background: url("../img/setup.png");
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -52,7 +52,7 @@ li {
 }
 
 .header__container-title a:hover {
-    color: #000; 
+    color: #000;
 }
 
 .header__container-title a h1 {
@@ -488,17 +488,17 @@ footer {
 /* El formulario en mobile */
 @media (max-width: 768px) {
     .contacts__img-container {
-        display: none; 
+        display: none;
     }
 
     .contacts__form-container {
-        flex: 0 0 100%; 
+        flex: 0 0 100%;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
     }
 
     .contacts__form-container form {
-        width: 90%; 
+        width: 90%;
     }
 }
 
