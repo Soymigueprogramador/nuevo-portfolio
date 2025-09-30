@@ -36,7 +36,7 @@ function descargarCv() {
 
 // ==================== ENVÍO DEL FORMULARIO DE CONTACTO ====================
 
-/* Agrega un evento "submit" al formulario con ID "contactForm"
+//Agrega un evento "submit" al formulario con ID "contactForm"
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     // Previene el comportamiento por defecto del formulario (que recargue la página)
     event.preventDefault();
@@ -81,9 +81,28 @@ document.getElementById("contactForm").addEventListener("submit", function (even
                 text: "No se pudo enviar el mensaje. Intentá nuevamente más tarde.",
             });
         });
-}); */
+});
 
-const form = document.getElementById("form-contacto");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    const form = document.getElementById("form-contacto");
 const respuesta = document.getElementById("respuesta");
 
 // Constante para guardar la api que comunica al front-end y al back-end
@@ -125,3 +144,4 @@ form.addEventListener('submit', async (e) => {
         respuesta.textContent = "❌ Error al enviar el mensaje.";
     };
 })
+*/
