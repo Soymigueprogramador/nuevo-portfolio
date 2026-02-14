@@ -2,6 +2,7 @@
 import { initDownloadCV } from './modulos/descargaCv.js';
 import { initContactForm } from './modulos/contacto.js';
 import { cambiarModo } from './modulos/cambiarModo.js';
+import { descargarCv } from './modulos/descargaCv.js'
 
 // Iniciamos todo cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", () => {
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initDownloadCV();
     initContactForm();
     cambiarModo();
+    descargarCv()
 
     // Aquí puedes agregar otras funciones que tengas, como el menú mobile, etc.
 });
