@@ -4,7 +4,7 @@ export function initDownloadCV() {
     if (!downloadBtn) return;
 
     downloadBtn.addEventListener("click", () => {
-        const urlCv = "./Mi cv/CV - Miguel Salazar";
+        const urlCv = "../../Mi cv/CV - Miguel Salazar.pdf";
         const enlace = document.createElement("a");
 
         enlace.href = urlCv;
