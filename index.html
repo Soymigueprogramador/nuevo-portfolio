@@ -22,7 +22,7 @@
 <body>
   <header>
     <div class="img-container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#inicio">Miguel Salazar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -44,10 +44,18 @@
       </nav>
 
       <div class="title-container" id="inicio">
-        <h1>Soy Miguel</h1>
-        <p>Estudiante de la Tecnicatura Universitaria en Programación (TUP)</p>
-        <p>En la Universidad Tecnológica Nacional (UTN)</p>
-        <p>Desarrollador Front-end</p>
+        <h1>Miguel Salazar</h1>
+
+        <h2>Desarrollador Frontend React</h2>
+
+        <p>
+          Desarrollo aplicaciones web modernas con React, enfocadas en experiencia de usuario,
+          arquitectura escalable y consumo de APIs.
+        </p>
+
+        <p class="hero__extra">
+          Estudiante de la Tecnicatura Universitaria en Programación (UTN)
+        </p>
 
         <button id="theme-toogle" aria-label="Cambiar modo">
           <span id="theme-icon">🌙</span>
@@ -69,20 +77,26 @@
 
       <div class="about__description-container">
         <p>
-          ¡Hola! 😊
-          Mi nombre es Miguel Salazar, soy desarrollador front-end React, actualmente soy estudiante de la carrera de
-          técnico universitario en programacion y actualmente busco mi primer empleo como desarrollador front-end, poseo
-          experiencia en el desarrollo de aplicaciones web.<br>
-          Me apasiona aprender nuevas tecnologías y aplicar mis conocimientos para ayudar a otros a alcanzar sus
-          objetivos. <br>
-          Actualmente, me encuentro buscando mi primer oportunidad en el sector IT como desarrollador front-end react y
-          me comprometo a mantenerme actualizado en mi campo. <br>
+          Desarrollador Frontend especializado en React, enfocado en la construcción de interfaces
+          dinámicas, escalables y orientadas a resolver problemas reales.
+        </p>
 
-          Soy un profesional comprometido con la calidad y la excelencia en todo lo que hago. <br>
-          Disfruto trabajando en equipo y tengo habilidades de comunicación efectiva y colaboración. <br>
+        <p>
+          Actualmente desarrollo aplicaciones web utilizando React, con experiencia en consumo de APIs,
+          manejo de estado y arquitectura basada en componentes reutilizables. He trabajado tanto en
+          proyectos individuales como colaborativos, incluyendo el desarrollo de soluciones para clientes
+          reales y simulaciones de entorno laboral.
+        </p>
 
-          Estoy buscando oportunidades para formar parte de un equipo de IT en una empresa donde pueda desarrollarme
-          profesionalmente y contribuir con mis habilidades. <br>
+        <p>
+          Me encuentro en formación como Técnico Universitario en Programación, complementando mi base
+          académica con proyectos prácticos orientados a producción, como e-commerce y aplicaciones con
+          potencial fullstack.
+        </p>
+
+        <p>
+          Busco mi primera oportunidad profesional como desarrollador frontend, donde pueda aportar
+          valor desde el primer día y continuar evolucionando hacia un perfil fullstack.
         </p>
         <button id="descarga-mi-cv" class="cv">Descarga mi CV</button>
       </div>
@@ -144,7 +158,7 @@
     <section class="skills" id="tecnologias">
       <div class="skill--center">
         <div class="skills__title-container">
-          <h2>Tecnologías</h2>
+          <h2>Tecnologías fron-end</h2>
         </div>
 
         <div class="skills__skill-container">
@@ -168,87 +182,44 @@
       </div>
     </section>
 
-    <!-- Proyectos (el resto de esta sección estaba bien, no la repito para ahorrar espacio) -->
+    <section class="skills" id="tecnologias">
+      <div class="skill--center">
+        <div class="skills__title-container">
+          <h2>Tecnologías back-end</h2>
+        </div>
+
+        <div class="skills__skill-container">
+          <div class="skill__container_img"><img src="./img/tecnologias/node.png" alt="Icono de Node.js"
+              title="Node.js" />
+          </div>
+          <div class="skill__container_img"><img src="./img/tecnologias/express.png" alt="Icono de Express.js"
+              title="Express.js" />
+          </div>
+
+        </div>
+    </section>
+
+    <!-- Proyectos destacados -->
     <div class="projects" id="proyectos">
-      <h3>Proyectos del mundo real</h3>
+      <h2>Proyectos destacados</h2>
+
+      <p class="projects__intro">
+        Selección de proyectos enfocados en desarrollo frontend con React, orientados a la construcción
+        de interfaces dinámicas, arquitectura escalable y resolución de problemas reales.
+      </p>
+
       <div class="projects__card-containers">
 
-        <article class="card">
-          <img src="./img/proyectos/cafe-cafe.png" alt="Captura de pantalla del proyecto ViajaConNosotros">
-          <div class="card__description-container">
-            <h3>Cafe-cafe</h3>
-            <p>
-              Cafe‑Cafe es una landing page moderna para una cafetería, desarrollada con React y Vite. El proyecto está
-              enfocado en mostrar la identidad del negocio, <br>
-              su propuesta gastronómica y la información de contacto mediante una interfaz limpia, <br>
-              rápida y adaptable a distintos dispositivos.
-            </p>
-          </div>
-
-          <div class="card__tools-container">
-            <span>React.js</span>
-            <span>CSS module</span>
-            <span>Vite</span>
-          </div>
-
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="https://cafeteria-cafe-cafe.netlify.app/" target="_blank">Ver proyecto</a>
-            </div>
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/cafe-cafe" target="_blank">Ver código</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="./img/proyectos/ViajaConNosotros.png" alt="Captura de pantalla del proyecto ViajaConNosotros">
-          <div class="card__description-container">
-            <h3>ViajaConNosotros</h3>
-            <p>
-              **ViajaConNosotros** es un proyecto web para una agencia de viajes.<br>
-              Su propósito es mostrar todos los destinos donde podrás disfrutar unos días de descanso.<br>
-              Actualmente, el proyecto se encuentra en desarrollo.
-            </p>
-          </div>
-
-          <div class="card__tools-container">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Bootstrap</span>
-            <span>JavaScript</span>
-          </div>
-
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="#" target="_blank">Proyecto en desarrollo</a>
-            </div>
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/viaja-con-nosotros" target="_blank">Ver código</a>
-            </div>
-          </div>
-        </article>
-
+        <!-- DOC360 -->
         <article class="card">
           <img src="./img/proyectos/doc360.png" alt="Captura de pantalla del proyecto Doc360">
+
           <div class="card__description-container">
             <h3>Doc360</h3>
             <p>
-              **Doc360** es un proyecto creado con la finalidad de ser utilizado como un gestor de historias
-              clínicas. <br>
-              Se utilizaría para que los médicos puedan acceder al historial de sus pacientes de manera
-              online,
-              permitiéndoles conocer dónde fue atendido un paciente previamente, qué tratamiento recibió,
-              y
-              realizar un seguimiento más preciso. <br>
-              El paciente podrá recibir recetas e indicaciones del médico, y también tendrá la opción de
-              informar
-              si ha tenido alguna reacción adversa al tratamiento. <br>
-              Este proyecto aún está en construcción.
+              Aplicación web en desarrollo para la gestión de historias clínicas. Permite centralizar
+              información médica, seguimiento de tratamientos y registro de interacciones paciente–profesional.
+              Diseñada con React bajo una arquitectura modular y escalable.
             </p>
           </div>
 
@@ -260,7 +231,7 @@
           <div class="card__views">
             <div>
               <i class="fa fa-link"></i>
-              <a href="#" target="_blank">Proyecto en desarrollo</a>
+              <a href="#" target="_blank">En desarrollo</a>
             </div>
             <div>
               <i class="fa fa-github"></i>
@@ -269,20 +240,89 @@
           </div>
         </article>
 
+
+        <!-- TIENDA ONLINE -->
+        <article class="card">
+          <img src="./img/proyectos/tienda-online.png" alt="Captura de pantalla del e-commerce Tienda Online">
+
+          <div class="card__description-container">
+            <h3>Tienda Online</h3>
+            <p>
+              E-commerce desarrollado con React.js enfocado en experiencia de usuario y arquitectura escalable.
+              Implementa navegación dinámica, gestión de estado y componentes reutilizables.
+              Actualmente en evolución hacia una arquitectura fullstack con Node.js, Express y MongoDB.
+            </p>
+          </div>
+
+          <div class="card__tools-container">
+            <span>React.js</span>
+            <span>SCSS Modules</span>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="card__views">
+            <div>
+              <i class="fa fa-link"></i>
+              <a href="https://mi-online.netlify.app/" target="_blank">Ver proyecto</a>
+            </div>
+            <div>
+              <i class="fa fa-github"></i>
+              <a href="https://github.com/Soymigueprogramador/mi-tienda-online" target="_blank">Ver código</a>
+            </div>
+          </div>
+        </article>
+
+
+        <!-- Ediciones Saudade -->
+        <article class="card">
+          <img src="./img/proyectos/ediciones-saudade.png" alt="Captura de pantalla del sitio Ediciones Saudade">
+
+          <div class="card__description-container">
+            <h3>Ediciones Saudade</h3>
+            <p>
+              Sitio web desarrollado para una clienta real, enfocado en la presentación de servicios editoriales.
+              Implementa una interfaz clara, diseño responsive y estructura orientada a comunicación efectiva
+              con el usuario final. Proyecto desarrollado de forma independiente, desde la planificación hasta la
+              entrega.
+            </p>
+          </div>
+
+          <div class="card__tools-container">
+            <span>React.js</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Cliente real</span>
+          </div>
+
+          <div class="card__views">
+            <div>
+              <i class="fa fa-link"></i>
+              <a href="https://ediciones-saudade.netlify.app/" target="_blank">Ver proyecto</a>
+            </div>
+            <div>
+              <i class="fa fa-github"></i>
+              <a href="https://github.com/Soymigueprogramador/ediciones-saudade" target="_blank">Ver código</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SPORTWEAR  -->
         <article class="card">
           <img src="./img/proyectos/sportwear.png" alt="Captura de pantalla del e-commerce Sportwear">
+
           <div class="card__description-container">
             <h3>Sportwear</h3>
             <p>
-              Proyecto de un **E-commerce** creado con **React.js** y **Tailwind CSS**. <br> Este proyecto fue creado en
-              el marco de una simulación laboral en **No-Country**. <br>
-              Debido a problemas técnicos, lamentablemente he perdido el acceso al repositorio de GitHub;
-              aun así, pueden ver este proyecto. </p>
+              E-commerce desarrollado en el contexto de una simulación laboral colaborativa.
+              Participación en el desarrollo de la interfaz, navegación entre productos y
+              construcción de componentes reutilizables utilizando React y Tailwind CSS.
+            </p>
           </div>
 
           <div class="card__tools-container">
             <span>React.js</span>
             <span>Tailwind CSS</span>
+            <span>Trabajo en equipo</span>
           </div>
 
           <div class="card__views">
@@ -291,162 +331,47 @@
               <a href="https://sportswearcommerce.netlify.app/" target="_blank">Ver proyecto</a>
             </div>
             <div>
-              <i class="fa fa-github"></i>
-              <a href="https://sportswearcommerce.netlify.app/" target="_blank">Ver proyecto</a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <h3>Proyectos de práctica</h3>
-      <div class="projects__card-containers">
-
-        <article class="card">
-          <img src="./img/proyectos/todolist-react-ts.png" alt="Captura de pantalla de la Lista de tareas (To-Do List)">
-          <div class="card__description-container">
-            <h3>Lista de tareas</h3>
-            <p>
-              Proyecto creado para aplicar los conocimientos aprendidos en el curso de **TypeScript**.
-            </p>
-          </div>
-
-          <div class="card__tools-container">
-            <span>React.js</span>
-            <span>CSS</span>
-            <span>TypeScript</span>
-          </div>
-
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="https://listadetareas-react-ts.netlify.app/" target="_blank">Ver proyecto</a>
-            </div>
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/todolist-react-ts" target="_blank">Ver
-                código</a>
+              <i class="fa fa-info-circle"></i>
+              <span>Proyecto colaborativo</span>
             </div>
           </div>
         </article>
 
-        <article class="card">
-          <img src="./img/proyectos/mini-netflix.png" alt="Captura de pantalla de la simulación de Mini Netflix">
 
-          <div class="card__description-container">
-            <h3>Mini Netflix</h3>
-            <p>
-              Proyecto creado para simular una **prueba técnica de front-end** y a su vez sumar un nuevo
-              proyecto para mi portafolio. <br> Debido a problemas técnicos con Netlify, todavía no he podido hacer el
-              *deploy* de este
-              proyecto; aun así, puedes ver el repositorio de **GitHub**. </p>
-          </div>
 
-          <div class="card__tools-container">
-            <span>React.js</span>
-            <span>CSS</span>
-          </div>
 
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="https://mini-netflis.netlify.app/" target="_blank">Ver proyecto</a>
+
+
+
+
+
+        <!-- Contacto -->
+        <section class="contacts" id="contacto">
+          <h3>Contacto</h3>
+          <div class="contacts__container">
+            <div class="contacts__img-container">
+              <img src="./img/contacto.png" alt="Ilustración de una persona contactando a otra" />
             </div>
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/mini-netflix" target="_blank">Ver código</a>
-            </div>
-          </div>
-        </article>
 
-        <article class="card">
-          <img src="./img/proyectos/web-del-clima.png" alt="Captura de pantalla de la Web del clima">
+            <div class="contacts__form-container">
+              <form id="contactForm" action="https://formsubmit.co/soymigueprogramador@gmail.com" method="POST">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" required placeholder="Tu nombre" />
 
-          <div class="card__description-container">
-            <h3>Web del clima</h3>
-            <p>
-              Este fue un proyecto creado para la **entrega final del curso de JavaScript de Coderhouse**.
-            </p>
-          </div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Tu email" />
 
-          <div class="card__tools-container">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" required placeholder="Tu mensaje"></textarea>
 
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="https://web-del-clima.netlify.app/" target="_blank">Ver proyecto</a>
-            </div>
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/web-del-clima" target="_blank">Ver el
-                código</a>
+                <input type="submit" value="Enviar" />
+
+                <input type="hidden" value="https://portfolio-miguel-salazar.netlify.app/#contacto" />
+                <input type="hidden" name="_captcha" value="false" />
+              </form>
             </div>
           </div>
-        </article>
-
-        <article class="card">
-          <img src="./img/proyectos/calculadora.png" alt="Captura de pantalla de la Calculadora">
-
-          <div class="card__description-container">
-            <h3>Calculadora</h3>
-            <p>
-              Este es un proyecto creado para el **curso de JavaScript de Coderhouse**.
-            </p>
-          </div>
-
-          <div class="card__tools-container">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="https://calculadora-11.netlify.app/" target="_blank">Ver proyecto</a>
-            </div>
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/calculadora" target="_blank">Ver código</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-    </div>
-
-
-    <!-- Contacto -->
-    <section class="contacts" id="contacto">
-      <h3>Contacto</h3>
-      <div class="contacts__container">
-        <div class="contacts__img-container">
-          <img src="./img/contacto.png" alt="Ilustración de una persona contactando a otra" />
-        </div>
-
-        <div class="contacts__form-container">
-          <form id="contactForm" action="https://formsubmit.co/soymigueprogramador@gmail.com" method="POST">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" required placeholder="Tu nombre" />
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required placeholder="Tu email" />
-
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" required placeholder="Tu mensaje"></textarea>
-
-            <input type="submit" value="Enviar" />
-
-            <input type="hidden" value="https://portfolio-miguel-salazar.netlify.app/#contacto" />
-            <input type="hidden" name="_captcha" value="false" />
-          </form>
-        </div>
-      </div>
-    </section>
+        </section>
   </main>
 
   <footer>
