@@ -57,8 +57,8 @@
           Estudiante de la Tecnicatura Universitaria en Programación (UTN)
         </p>
 
-        <button id="theme-toogle" aria-label="Cambiar modo">
-          <span id="theme-icon">🌙</span>
+        <button id="theme-toggle" aria-label="Cambiar tema" aria-pressed="false">
+          <span id="theme-icon" aria-hidden="true">🌙</span>
         </button>
       </div>
     </div>
@@ -154,59 +154,72 @@
       </div>
     </section>
 
+
+
     <!-- Tecnologías -->
     <section class="skills" id="tecnologias">
       <div class="skill--center">
+
+        <!-- Frontend -->
         <div class="skills__title-container">
-          <h2>Tecnologías fron-end</h2>
+          <h2>Tecnologías front-end</h2>
         </div>
 
         <div class="skills__skill-container">
-          <div class="skill__container_img"><img src="./img/tecnologias/html.png" alt="Icono de HTML" title="HTML" />
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/html.png" alt="Icono de HTML" title="HTML" />
           </div>
-          <div class="skill__container_img"><img src="./img/tecnologias/css.png" alt="Icono de CSS" title="CSS" /></div>
-          <div class="skill__container_img"><img src="./img/tecnologias/bootstrap.png" alt="Icono de Bootstrap"
-              title="Bootstrap" /></div>
-          <div class="skill__container_img"><img src="./img/tecnologias/sass.png" alt="Icono de Sass" title="Sass" />
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/css.png" alt="Icono de CSS" title="CSS" />
           </div>
-          <div class="skill__container_img"><img src="./img/tecnologias/git.png" alt="Icono de Git" title="Git" /></div>
-          <div class="skill__container_img"><img src="./img/tecnologias/github.png" alt="Icono de GitHub"
-              title="GitHub" /></div>
-          <div class="skill__container_img"><img src="./img/tecnologias/javascript.png" alt="Icono de JavaScript"
-              title="JavaScript" /></div>
-          <div class="skill__container_img"><img src="./img/tecnologias/typescript.png" alt="Icono de TypeScript"
-              title="TypeScript" /></div>
-          <div class="skill__container_img"><img src="./img/tecnologias/react.png" alt="Icono de React.js"
-              title="React.js" /></div>
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/bootstrap.png" alt="Icono de Bootstrap" title="Bootstrap" />
+          </div>
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/sass.png" alt="Icono de Sass" title="Sass" />
+          </div>
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/git.png" alt="Icono de Git" title="Git" />
+          </div>
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/github.png" alt="Icono de GitHub" title="GitHub" />
+          </div>
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/javascript.png" alt="Icono de JavaScript" title="JavaScript" />
+          </div>
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/typescript.png" alt="Icono de TypeScript" title="TypeScript" />
+          </div>
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/react.png" alt="Icono de React.js" title="React.js" />
+          </div>
         </div>
+
+        <!-- Backend -->
+
+
+        <div class="skills__skill-container">
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/node.png" alt="Icono de Node.js" title="Node.js" />
+          </div>
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/express.png" alt="Icono de Express.js" title="Express.js" />
+          </div>
+          <div class="skill__container_img">
+            <img src="./img/tecnologias/mongodb.png" alt="Icono de MongoDB" title="MongoDB" />
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="skills" id="tecnologias">
-      <div class="skill--center">
-        <div class="skills__title-container">
-          <h2>Tecnologías back-end</h2>
-        </div>
 
-        <div class="skills__skill-container">
-          <div class="skill__container_img"><img src="./img/tecnologias/node.png" alt="Icono de Node.js"
-              title="Node.js" />
-          </div>
-          <div class="skill__container_img"><img src="./img/tecnologias/express.png" alt="Icono de Express.js"
-              title="Express.js" />
-          </div>
-
-        </div>
-    </section>
 
     <!-- Proyectos destacados -->
     <div class="projects" id="proyectos">
       <h2>Proyectos destacados</h2>
 
-      <p class="projects__intro">
-        Selección de proyectos enfocados en desarrollo frontend con React, orientados a la construcción
-        de interfaces dinámicas, arquitectura escalable y resolución de problemas reales.
-      </p>
+
 
       <div class="projects__card-containers">
 
@@ -275,7 +288,7 @@
 
         <!-- Ediciones Saudade -->
         <article class="card">
-          <img src="./img/proyectos/ediciones-saudade.png" alt="Captura de pantalla del sitio Ediciones Saudade">
+          <img src="./img/proyectos" alt="Captura de pantalla del sitio Ediciones Saudade">
 
           <div class="card__description-container">
             <h3>Ediciones Saudade</h3>
@@ -355,6 +368,7 @@
 
             <div class="contacts__form-container">
               <form id="contactForm" action="https://formsubmit.co/soymigueprogramador@gmail.com" method="POST">
+
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" required placeholder="Tu nombre" />
 
@@ -366,8 +380,11 @@
 
                 <input type="submit" value="Enviar" />
 
-                <input type="hidden" value="https://portfolio-miguel-salazar.netlify.app/#contacto" />
+                <!-- Configuración FormSubmit -->
+                <input type="hidden" name="_next" value="https://portfolio-miguel-salazar.netlify.app/#contacto" />
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portfolio" />
                 <input type="hidden" name="_captcha" value="false" />
+
               </form>
             </div>
           </div>
@@ -378,22 +395,22 @@
     <div class="footer__networking">
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/miguel-salazar-5576b7258/" target="_blank" class="linkedin"
-            title="LinkedIn">
-            <i class="fa fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/miguel-salazar-5576b7258/" target="_blank" rel="noopener noreferrer"
+            class="linkedin" title="LinkedIn" aria-label="Perfil de LinkedIn de Miguel Salazar">
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="https://github.com/Soymigueprogramador?tab=repositories" target="_blank" class="github"
-            title="GitHub">
-            <i class="fa fa-github"></i>
+          <a href="https://github.com/Soymigueprogramador?tab=repositories" target="_blank" rel="noopener noreferrer"
+            class="github" title="GitHub" aria-label="Perfil de GitHub de Miguel Salazar">
+            <i class="fab fa-github"></i>
           </a>
         </li>
       </ul>
     </div>
 
-    <div class="footer_copy">
-      <span>&copy; Miguel Salazar - 2024</span>
+    <div class="footer__copy">
+      <span>&copy; Miguel Salazar - <span id="year"></span></span>
     </div>
   </footer>
 

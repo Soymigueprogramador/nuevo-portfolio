@@ -1,6 +1,8 @@
 export function cambiarModo() {
-    const boton = document.getElementById('theme-toogle');
+    const boton = document.getElementById('theme-toggle');
     const icono = document.getElementById('theme-icon');
+
+    if (!boton) return; // evita crash si no existe
 
     const currentTheme = localStorage.getItem('theme');
 
@@ -10,18 +12,16 @@ export function cambiarModo() {
     }
 
     boton.addEventListener('click', () => {
-        const theme = document.documentElement.getAttribute('data-theme', 'dark');
+        const theme = document.documentElement.getAttribute('data-theme');
 
         if (theme === 'dark') {
             document.documentElement.removeAttribute('data-theme');
-            // CAMBIO 2: Usar setItem para GUARDAR la preferencia
             localStorage.setItem('theme', 'light');
-            icono.textContent = '🌙';
+            if (icono) icono.textContent = '🌙';
         } else {
-            document.documentElement.setAttribute("data-theme", "dark");
-            localStorage.setItem("theme", "dark");
-            // CAMBIO 3: Asegúrate de usar 'icono' (con o al final)
-            icono.textContent = "☀️";
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            if (icono) icono.textContent = '☀️';
         }
     });
-};
+}
