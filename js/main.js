@@ -1,6 +1,6 @@
 // Importacion de modulos
 import { initDownloadCV } from './modulos/descargaCv.js';
-import { initContactForm } from './modulos/contacto.js';
+import contacto from './modulos/contacto.js';
 import { cambiarModo } from './modulos/cambiarModo.js';
 import { initYear } from './modulos/year.js';
 
@@ -8,7 +8,7 @@ import { initYear } from './modulos/year.js';
 document.addEventListener("DOMContentLoaded", () => {
     // Llamamos a los modulos
     initDownloadCV();
-    initContactForm();
+    contacto();
     cambiarModo();
     initYear();
 
