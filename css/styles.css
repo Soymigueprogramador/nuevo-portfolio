@@ -356,6 +356,10 @@ li {
     background-color: #eeeeee;
 }
 
+p {
+    text-align: center;
+}
+
 .contacts>h3 {
     text-align: center;
     font-size: 2em;
