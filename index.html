@@ -7,422 +7,353 @@
   <meta name="description"
     content="Portafolio de Miguel Salazar. Desarrollador front-end con conocimientos en HTML5, CSS3, Bootstrap, Sass, JavaScript, React.js. Proyectos, certificaciones y contacto." />
   <meta name="keywords"
-    content="programación, desarrollo web, sitios web, html5, css3, bootstrap, sass, javascript, react.js, portafolio, diseño web, diseño responsive, Miguel Salazar, front-end" />
+    content="programacion, desarrollo web, sitios web, html5, css3, bootstrap, sass, javascript, react.js, portafolio, diseno web, diseno responsive, Miguel Salazar, front-end" />
   <script src="https://kit.fontawesome.com/4dee6a3f47.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
-  <title>Portfolio | Miguel Salazar</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Portfolio | Miguel Salazar</title>Ñ
 </head>
 
 <body>
-  <header>
-    <div class="img-container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#inicio">Miguel Salazar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <header class="site-header" id="inicio">
+    <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Navegacion principal">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#inicio">Miguel Salazar</a>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="#conoceme">Conóceme</a></li>
-              <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-              <li class="nav-item"><a class="nav-link" href="#certificaciones">Certificaciones</a></li>
-              <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
-              <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-            </ul>
-          </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#conoceme">Conoceme</a></li>
+            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certificaciones">Certificaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <div class="title-container" id="inicio">
-        <h1>Miguel Salazar</h1>
-
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Frontend Developer</p>
+        <h1 id="hero-title">Miguel Salazar</h1>
         <h2>Desarrollador Frontend React</h2>
-
         <p>
           Desarrollo aplicaciones web modernas con React, enfocadas en experiencia de usuario,
           arquitectura escalable y consumo de APIs.
         </p>
-
         <p class="hero__extra">
-          Estudiante de la Tecnicatura Universitaria en Programación (UTN)
+          Estudiante de la Tecnicatura Universitaria en Programacion (UTN)
         </p>
-
-        <button id="theme-toggle" aria-label="Cambiar tema" aria-pressed="false">
-          <span id="theme-icon" aria-hidden="true">🌙</span>
-        </button>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#proyectos">Ver proyectos</a>
+          <a class="button button--ghost" href="#contacto">Contactame</a>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema" aria-pressed="false">
+            <span id="theme-icon" aria-hidden="true">L</span>
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
   </header>
 
   <main>
-    <!-- Sección Conóceme -->
-    <section class="about-me" id="conoceme">
-      <div class="about__title-container">
-        <h2>Conóceme</h2>
+    <section class="section about" id="conoceme" aria-labelledby="about-title">
+      <div class="section__heading">
+        <span>Perfil</span>
+        <h2 id="about-title">Conoceme</h2>
       </div>
 
-      <div class="about__img-container">
-        <img src="./img/yo.png" alt="Foto de perfil de Miguel Salazar" />
-      </div>
+      <div class="about__grid">
+        <div class="about__media">
+          <img src="./img/yo.png" alt="Foto de perfil de Miguel Salazar" />
+        </div>
 
-      <div class="about__description-container">
-        <p>
-          Desarrollador Frontend especializado en React, enfocado en la construcción de interfaces
-          dinámicas, escalables y orientadas a resolver problemas reales.
-        </p>
-
-        <p>
-          Actualmente desarrollo aplicaciones web utilizando React, con experiencia en consumo de APIs,
-          manejo de estado y arquitectura basada en componentes reutilizables. He trabajado tanto en
-          proyectos individuales como colaborativos, incluyendo el desarrollo de soluciones para clientes
-          reales y simulaciones de entorno laboral.
-        </p>
-
-        <p>
-          Me encuentro en formación como Técnico Universitario en Programación, complementando mi base
-          académica con proyectos prácticos orientados a producción, como e-commerce y aplicaciones con
-          potencial fullstack.
-        </p>
-
-        <p>
-          Busco mi primera oportunidad profesional como desarrollador frontend, donde pueda aportar
-          valor desde el primer día y continuar evolucionando hacia un perfil fullstack.
-        </p>
-        <button id="descarga-mi-cv" class="cv">Descarga mi CV</button>
-      </div>
-
-      <!-- Habilidades -->
-      <div class="about__abilitys-container" id="habilidades">
-        <div class="about__abilitys-container--center">
-          <div class="about__ability-title-container">
-            <h3>Habilidades</h3>
-          </div>
-
-          <div class="about__abilitys">
-            <article>
-              <img src="./img/book.svg" alt="Icono de libro para aprendizaje" />
-              <p>Aprendizaje rápido</p>
-            </article>
-            <article>
-              <img src="./img/teamwork.svg" alt="Icono de trabajo en equipo" />
-              <p>Trabajo en equipo</p>
-            </article>
-            <article>
-              <img src="./img/conflict.svg" alt="Icono de manejo de conflictos" />
-              <p>Manejo de conflictos</p>
-            </article>
-          </div>
+        <div class="about__content">
+          <p>
+            Desarrollador Frontend especializado en React, enfocado en la construccion de interfaces
+            dinamicas, escalables y orientadas a resolver problemas reales.
+          </p>
+          <p>
+            Actualmente desarrollo aplicaciones web utilizando React, con experiencia en consumo de APIs,
+            manejo de estado y arquitectura basada en componentes reutilizables. He trabajado tanto en
+            proyectos individuales como colaborativos, incluyendo el desarrollo de soluciones para clientes
+            reales y simulaciones de entorno laboral.
+          </p>
+          <p>
+            Me encuentro en formacion como Tecnico Universitario en Programacion, complementando mi base
+            academica con proyectos practicos orientados a produccion, como e-commerce y aplicaciones con
+            potencial fullstack.
+          </p>
+          <p>
+            Busco mi primera oportunidad profesional como desarrollador frontend, donde pueda aportar
+            valor desde el primer dia y continuar evolucionando hacia un perfil fullstack.
+          </p>
+          <button id="descarga-mi-cv" class="button button--primary" type="button">Descarga mi CV</button>
         </div>
       </div>
     </section>
 
-    <!-- Certificaciones -->
-    <section class="about__abilitys-container" id="certificaciones">
-      <div class="about__abilitys-container--center">
-        <div class="about__ability-title-container">
-          <h3>Certificaciones</h3>
-        </div>
+    <section class="section soft-skills" id="habilidades" aria-labelledby="skills-soft-title">
+      <div class="section__heading">
+        <span>Forma de trabajo</span>
+        <h2 id="skills-soft-title">Habilidades</h2>
+      </div>
 
-        <div class="about__abilitys">
-          <article>
-            <img src="./certificaciones/desarrollo-web.png" alt="Certificado del curso de desarrollo web" />
-            <p>Desarrollo web</p>
-          </article>
-          <article>
-            <img src="./certificaciones/JavaScript.png" alt="Certificado del curso de JavaScript" />
-            <p>JavaScript</p>
-          </article>
-          <article>
-            <img src="./certificaciones/No Country.jpg" alt="Certificado de la simulación en No-Country" />
-            <p>No-Country Simulación Laboral</p>
-          </article>
-          <article>
-            <img src="./certificaciones/certificado-scrum.jpg" alt="Certificado del curso de scrum" />
-            <p>Scrum desde cero</p>
-          </article>
-        </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <img src="./img/book.svg" alt="Icono de libro para aprendizaje" />
+          <h3>Aprendizaje rapido</h3>
+        </article>
+        <article class="feature-card">
+          <img src="./img/teamwork.svg" alt="Icono de trabajo en equipo" />
+          <h3>Trabajo en equipo</h3>
+        </article>
+        <article class="feature-card">
+          <img src="./img/conflict.svg" alt="Icono de manejo de conflictos" />
+          <h3>Manejo de conflictos</h3>
+        </article>
       </div>
     </section>
 
-    <!-- Tecnologías -->
-    <section class="skills" id="tecnologias">
-      <div class="skill--center">
+    <section class="section certifications" id="certificaciones" aria-labelledby="certifications-title">
+      <div class="section__heading">
+        <span>Formacion</span>
+        <h2 id="certifications-title">Certificaciones</h2>
+      </div>
 
-        <!-- Frontend -->
-        <div class="skills__title-container">
-          <h2>Tecnologías front-end</h2>
-        </div>
-
-        <div class="skills__skill-container">
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/html.png" alt="Icono de HTML" title="HTML" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/css.png" alt="Icono de CSS" title="CSS" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/bootstrap.png" alt="Icono de Bootstrap" title="Bootstrap" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/sass.png" alt="Icono de Sass" title="Sass" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/git.png" alt="Icono de Git" title="Git" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/github.png" alt="Icono de GitHub" title="GitHub" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/javascript.png" alt="Icono de JavaScript" title="JavaScript" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/typescript.png" alt="Icono de TypeScript" title="TypeScript" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/react.png" alt="Icono de React.js" title="React.js" />
-          </div>
-        </div>
-
-        <!-- Backend -->
-        <div class="skills__skill-container">
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/node.png" alt="Icono de Node.js" title="Node.js" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/express.png" alt="Icono de Express.js" title="Express.js" />
-          </div>
-          <div class="skill__container_img">
-            <img src="./img/tecnologias/mongodb.png" alt="Icono de MongoDB" title="MongoDB" />
-          </div>
-        </div>
-
+      <div class="certifications__grid">
+        <article class="certificate-card">
+          <img src="./certificaciones/desarrollo-web.png" alt="Certificado del curso de desarrollo web" />
+          <h3>Desarrollo web</h3>
+        </article>
+        <article class="certificate-card">
+          <img src="./certificaciones/JavaScript.png" alt="Certificado del curso de JavaScript" />
+          <h3>JavaScript</h3>
+        </article>
+        <article class="certificate-card">
+          <img src="./certificaciones/No Country.jpg" alt="Certificado de la simulacion en No-Country" />
+          <h3>No-Country Simulacion Laboral</h3>
+        </article>
+        <article class="certificate-card">
+          <img src="./certificaciones/certificado-scrum.jpg" alt="Certificado del curso de scrum" />
+          <h3>Scrum desde cero</h3>
+        </article>
       </div>
     </section>
 
-    <!-- Proyectos destacados -->
-    <div class="projects" id="proyectos">
-      <h2>Proyectos destacados</h2>
-      <div class="projects__card-containers">
+    <section class="section technologies" id="tecnologias" aria-labelledby="technologies-title">
+      <div class="section__heading">
+        <span>Stack tecnico</span>
+        <h2 id="technologies-title">Tecnologias front-end</h2>
+      </div>
 
-        <!-- DOC360 -->
-        <article class="card">
-          <img src="./img/proyectos/doc360.png" alt="Captura de pantalla del proyecto Doc360">
+      <div class="tech-group" aria-label="Tecnologias frontend">
+        <div class="tech-item"><img src="./img/tecnologias/html.png" alt="Icono de HTML" title="HTML" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/css.png" alt="Icono de CSS" title="CSS" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/bootstrap.png" alt="Icono de Bootstrap" title="Bootstrap" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/sass.png" alt="Icono de Sass" title="Sass" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/git.png" alt="Icono de Git" title="Git" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/github.png" alt="Icono de GitHub" title="GitHub" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/javascript.png" alt="Icono de JavaScript" title="JavaScript" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/typescript.png" alt="Icono de TypeScript" title="TypeScript" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/react.png" alt="Icono de React.js" title="React.js" /></div>
+      </div>
 
-          <div class="card__description-container">
+      <div class="tech-group tech-group--compact" aria-label="Tecnologias backend">
+        <div class="tech-item"><img src="./img/tecnologias/node.png" alt="Icono de Node.js" title="Node.js" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/express.png" alt="Icono de Express.js" title="Express.js" /></div>
+        <div class="tech-item"><img src="./img/tecnologias/mongodb.png" alt="Icono de MongoDB" title="MongoDB" /></div>
+      </div>
+    </section>
+
+    <section class="section projects" id="proyectos" aria-labelledby="projects-title">
+      <div class="section__heading">
+        <span>Trabajo reciente</span>
+        <h2 id="projects-title">Proyectos destacados</h2>
+      </div>
+
+      <div class="projects__grid">
+        <article class="project-card">
+          <img src="./img/proyectos/doc360.png" alt="Captura de pantalla del proyecto Doc360" />
+          <div class="project-card__body">
             <h3>Doc360</h3>
             <p>
-              Aplicación web en desarrollo para la gestión de historias clínicas. Permite centralizar
-              información médica, seguimiento de tratamientos y registro de interacciones paciente–profesional.
-              Diseñada con React bajo una arquitectura modular y escalable.
+              Aplicacion web en desarrollo para la gestion de historias clinicas. Permite centralizar
+              informacion medica, seguimiento de tratamientos y registro de interacciones paciente-profesional.
+              Disenada con React bajo una arquitectura modular y escalable.
             </p>
-          </div>
-
-          <div class="card__tools-container">
-            <span>React.js</span>
-            <span>SASS Modules</span>
-          </div>
-
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="#" target="_blank">En desarrollo</a>
+            <div class="tag-list">
+              <span>React.js</span>
+              <span>SASS Modules</span>
             </div>
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/doc360" target="_blank">Ver código</a>
+            <div class="project-card__links">
+              <span><i class="fa fa-link" aria-hidden="true"></i> En desarrollo</span>
+              <a href="https://github.com/Soymigueprogramador/doc360" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-github" aria-hidden="true"></i> Ver codigo
+              </a>
             </div>
           </div>
         </article>
 
-        <!-- CONTACT -->
-        <article class="card">
-          <img src="./img/proyectos/Contact.png" alt="Captura de pantalla del e-commerce Tienda Online">
-
-          <div class="card__description-container">
-            <h3>Contact </h3>
+        <article class="project-card">
+          <img src="./img/proyectos/Contact.png" alt="Captura de pantalla del servicio Contact" />
+          <div class="project-card__body">
+            <h3>Contact</h3>
             <p>
-              Servicio backend desarrollado para gestionar el envío de mensajes desde el formulario de contacto del
-              portfolio. Implementa una API REST con Node.js y Express, incluyendo validación de datos, manejo de
-              errores y configuración de seguridad básica (CORS, Helmet). Permite desacoplar la lógica del frontend y
-              asegurar un flujo de comunicación confiable entre cliente y servidor. Proyecto orientado a resolver una
-              necesidad real de producción.
+              Servicio backend desarrollado para gestionar el envio de mensajes desde el formulario de contacto del
+              portfolio. Implementa una API REST con Node.js y Express, incluyendo validacion de datos, manejo de
+              errores y configuracion de seguridad basica (CORS, Helmet). Permite desacoplar la logica del frontend y
+              asegurar un flujo de comunicacion confiable entre cliente y servidor. Proyecto orientado a resolver una
+              necesidad real de produccion.
             </p>
-          </div>
-
-          <div class="card__tools-container">
-            <span>Node.js</span>
-            <span>Express.js</span>
-            <span>REST API</span>
-            <span>MVC</span>
-            <span>CORS</span>
-            <span>Helmet</span>
-          </div>
-
-          <div class="card__views">
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/contact" target="_blank">Ver código del proyecto</a>
+            <div class="tag-list">
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>REST API</span>
+              <span>MVC</span>
+              <span>CORS</span>
+              <span>Helmet</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/Soymigueprogramador/contact" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-github" aria-hidden="true"></i> Ver codigo del proyecto
+              </a>
             </div>
           </div>
         </article>
 
-        <!-- TIENDA ONLINE -->
-        <article class="card">
-          <img src="./img/proyectos/tienda-online.png" alt="Captura de pantalla del e-commerce Tienda Online">
-
-          <div class="card__description-container">
+        <article class="project-card">
+          <img src="./img/proyectos/tienda-online.png" alt="Captura de pantalla del e-commerce Tienda Online" />
+          <div class="project-card__body">
             <h3>Tienda Online</h3>
             <p>
               E-commerce desarrollado con React.js enfocado en experiencia de usuario y arquitectura escalable.
-              Implementa navegación dinámica, gestión de estado y componentes reutilizables.
-              Actualmente en evolución hacia una arquitectura fullstack con Node.js, Express y MongoDB.
+              Implementa navegacion dinamica, gestion de estado y componentes reutilizables.
+              Actualmente en evolucion hacia una arquitectura fullstack con Node.js, Express y MongoDB.
             </p>
-          </div>
-
-          <div class="card__tools-container">
-            <span>React.js</span>
-            <span>SCSS Modules</span>
-            <span>JavaScript</span>
-          </div>
-
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="https://mi-online.netlify.app/" target="_blank">Ver proyecto</a>
+            <div class="tag-list">
+              <span>React.js</span>
+              <span>SCSS Modules</span>
+              <span>JavaScript</span>
             </div>
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/mi-tienda-online" target="_blank">Ver código</a>
+            <div class="project-card__links">
+              <a href="https://mi-online.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-link" aria-hidden="true"></i> Ver proyecto
+              </a>
+              <a href="https://github.com/Soymigueprogramador/mi-tienda-online" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-github" aria-hidden="true"></i> Ver codigo
+              </a>
             </div>
           </div>
         </article>
 
-
-        <!-- Ediciones Saudade -->
-        <article class="card">
-          <img src="./img/proyectos/ediciones-saudade.png" alt="Captura de pantalla del sitio Ediciones Saudade">
-
-          <div class="card__description-container">
+        <article class="project-card">
+          <img src="./img/proyectos/ediciones-saudade.png" alt="Captura de pantalla del sitio Ediciones Saudade" />
+          <div class="project-card__body">
             <h3>Ediciones Saudade</h3>
             <p>
-              Sitio web desarrollado para una clienta real, enfocado en la presentación de servicios editoriales.
-              Implementa una interfaz clara, diseño responsive y estructura orientada a comunicación efectiva
-              con el usuario final. Proyecto desarrollado de forma independiente, desde la planificación hasta la
+              Sitio web desarrollado para una clienta real, enfocado en la presentacion de servicios editoriales.
+              Implementa una interfaz clara, diseno responsive y estructura orientada a comunicacion efectiva
+              con el usuario final. Proyecto desarrollado de forma independiente, desde la planificacion hasta la
               entrega.
             </p>
-          </div>
-
-          <div class="card__tools-container">
-            <span>React.js</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Cliente real</span>
-          </div>
-
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="https://ediciones-saudade.netlify.app/" target="_blank">Ver proyecto</a>
+            <div class="tag-list">
+              <span>React.js</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Cliente real</span>
             </div>
-            <div>
-              <i class="fa fa-github"></i>
-              <a href="https://github.com/Soymigueprogramador/ediciones-saudade" target="_blank">Ver código</a>
+            <div class="project-card__links">
+              <a href="https://ediciones-saudade.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-link" aria-hidden="true"></i> Ver proyecto
+              </a>
+              <a href="https://github.com/Soymigueprogramador/ediciones-saudade" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-github" aria-hidden="true"></i> Ver codigo
+              </a>
             </div>
           </div>
         </article>
 
-        <!-- SPORTWEAR  -->
-        <article class="card">
-          <img src="./img/proyectos/sportwear.png" alt="Captura de pantalla del e-commerce Sportwear">
-
-          <div class="card__description-container">
+        <article class="project-card">
+          <img src="./img/proyectos/sportwear.png" alt="Captura de pantalla del e-commerce Sportwear" />
+          <div class="project-card__body">
             <h3>Sportwear</h3>
             <p>
-              E-commerce desarrollado en el contexto de una simulación laboral colaborativa.
-              Participación en el desarrollo de la interfaz, navegación entre productos y
-              construcción de componentes reutilizables utilizando React y Tailwind CSS.
+              E-commerce desarrollado en el contexto de una simulacion laboral colaborativa.
+              Participacion en el desarrollo de la interfaz, navegacion entre productos y
+              construccion de componentes reutilizables utilizando React y Tailwind CSS.
             </p>
-          </div>
-
-          <div class="card__tools-container">
-            <span>React.js</span>
-            <span>Tailwind CSS</span>
-            <span>Trabajo en equipo</span>
-          </div>
-
-          <div class="card__views">
-            <div>
-              <i class="fa fa-link"></i>
-              <a href="https://sportswearcommerce.netlify.app/" target="_blank">Ver proyecto</a>
+            <div class="tag-list">
+              <span>React.js</span>
+              <span>Tailwind CSS</span>
+              <span>Trabajo en equipo</span>
             </div>
-            <div>
-              <i class="fa fa-info-circle"></i>
-              <span>Proyecto colaborativo</span>
+            <div class="project-card__links">
+              <a href="https://sportswearcommerce.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-link" aria-hidden="true"></i> Ver proyecto
+              </a>
+              <span><i class="fa fa-info-circle" aria-hidden="true"></i> Proyecto colaborativo</span>
             </div>
           </div>
         </article>
+      </div>
+    </section>
 
-        <!-- Contacto -->
-        <section class="contacts" id="contacto">
-          <h3>Contacto</h3>
-          <p>
-            Por cualquier duda o consulta, mandame un mensaje. <br>
-            Te contesto lo antes posible.
-          </p>
-          <div class="contacts__container">
-            <div class="contacts__img-container">
-              <img src="./img/contacto.png" alt="Ilustración de una persona contactando a otra" />
-            </div>
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="section__heading">
+        <span>Contacto</span>
+        <h2 id="contact-title">Hablemos</h2>
+        <p>Por cualquier duda o consulta, mandame un mensaje. Te contesto lo antes posible.</p>
+      </div>
 
-            <div class="contacts__form-container">
-              <form id="contactForm">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" required placeholder="Tu nombre" />
+      <div class="contact__grid">
+        <div class="contact__media">
+          <img src="./img/contacto.png" alt="Ilustracion de una persona contactando a otra" />
+        </div>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required placeholder="Tu email" />
+        <form class="contact__form" id="contactForm">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" required placeholder="Tu nombre" />
 
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" required placeholder="Tu mensaje"></textarea>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="Tu email" />
 
-                <input type="submit" value="Enviar" />
-              </form>
-            </div>
-          </div>
-        </section>
+          <label for="message">Mensaje</label>
+          <textarea name="message" id="message" required placeholder="Tu mensaje"></textarea>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="footer__networking">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/miguel-salazar-5576b7258/" target="_blank" rel="noopener noreferrer"
-            class="linkedin" title="LinkedIn" aria-label="Perfil de LinkedIn de Miguel Salazar">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Soymigueprogramador?tab=repositories" target="_blank" rel="noopener noreferrer"
-            class="github" title="GitHub" aria-label="Perfil de GitHub de Miguel Salazar">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+  <footer class="site-footer">
+    <ul class="footer__networking" aria-label="Redes sociales">
+      <li>
+        <a href="https://www.linkedin.com/in/miguel-salazar-5576b7258/" target="_blank" rel="noopener noreferrer"
+          class="linkedin" title="LinkedIn" aria-label="Perfil de LinkedIn de Miguel Salazar">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Soymigueprogramador?tab=repositories" target="_blank" rel="noopener noreferrer"
+          class="github" title="GitHub" aria-label="Perfil de GitHub de Miguel Salazar">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
 
-    <div class="footer__copy">
-      <span>&copy; Miguel Salazar - <span id="year"></span></span>
-    </div>
+    <p class="footer__copy">&copy; Miguel Salazar - <span id="year"></span></p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
